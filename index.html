@@ -212,6 +212,8 @@
     </form>
 
     <style>
+      @media all and(max-width:480px) {
+      }
       body {
         background-color: #f4f4f4;
         color: #555;
@@ -273,13 +275,15 @@
       }
       #showcase {
         background-image: url("../images/image.png");
-        background-size: 100%;
+        background-size: cover;
+        height: 400px;
         background-position: 200px center;
         background-repeat: no-repeat;
-        height: 400px;
         margin-bottom: 30px;
         text-align: center;
-        border: 1px solid #000;
+        max-width: 100%;
+        object-fit: cover;
+
         width: 1200px;
       }
       #showcase h1 {
@@ -289,6 +293,7 @@
         right: 700px;
         bottom: 350px;
         font-style: oblique;
+        display: inline;
       }
       #soft {
         color: #000;
@@ -310,7 +315,7 @@
         position: absolute;
         top: 800px;
         left: 200px;
-        height: 500px;
+        min-height: 500px;
       }
       #pic h2 {
         background-image: url("../pic1/image.png");
@@ -536,7 +541,7 @@
         width: 2000px;
         font-size: 12px;
         position: relative;
-        top: 5550px;
+        top: 5600px;
         right: 100px;
       }
       #wid h4 {
